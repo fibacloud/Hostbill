@@ -14,28 +14,25 @@ FibaCloud.com Hostbill Reseller Modules
 - Click on the **Add new Connection**
 
 ## Packade Configuration
- - Go to General Settings > Products & Services > Products/Services > Create A New Product
- - Product Type: **Server/VPS**
- - Product Name: **Name**
- - Module: **FibaCloud**
- - Click on the **Continue**
+ - Go to System > Products & Services > OrderPage > Create A New Product
     - Edit Product
-       - go to **Module Settings**
-       - Module Name: **FibaCloud**
+       - go to **Connect with App**
+       - App: **FibaCloud**
+       - App Connection: **Connection Label**
        - Product ID: **FibaCloud Server Package That Will Match the Package You Edited**
+       - Server Location: **Select Server Location**
+       - OS Template: **Not Click**
        - Promo Code: **If you have a promotional code, you can pass the code via API.**
-       - Automatic Installation (optional): **Automatically setup the product as soon as the first payment is received**
        - Click on the **Save Changes**
 
 ## OS Configuration
-- Go to General Settings > Products & Services > Configurable Option Groups > Create A New Group
-- Group Name: **Operating System**
-- Assigned Products: **Select All**
-  - Configurable Options
-     - Add New Configurable Option
-     - Option Name (İmportand!): **OS**
-     - Option Type: **Dropdown**
-       - Add Option:
+- Go to System > Products & Services > OrderPage > Edit Packade > Components
+- Click on the **Add new form field**
+- Select field type: **Dropdown**
+- Premade fields: **Operating System**
+- Edit: **Operating System**
+    - Go to Values
+       - New Value:
          - CentOS 7
          - CentOS 8 Stream
          - CentOS 9 Stream
